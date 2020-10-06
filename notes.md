@@ -1,3 +1,4 @@
+## exercícios 1 e 2
 Coisas que eu quero lembrar sobre o DOM:
 
 markup como HTML é a interface que é traduzida numa estrutura de dados chamada
@@ -15,4 +16,7 @@ corresponde com a forma que typamos essas coisas no React.
 Por exemplo, uma HTMLTableElement "herda", na ordem do mais pro menos genérico:
 Node interface -> Element interface -> HTMLTableElement.
 
+## React.createElement()
+
+https://www.reddit.com/r/reactjs/comments/ia8sdi/any_other_typescript_users_constantly_confused/g1lsu9n/
 
