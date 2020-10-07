@@ -7,18 +7,84 @@
   <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.9.3/babel.js"></script>
   <script type="text/babel">
-    // 🐨 Make a function called `message` which returns the JSX we want to share
-
-    // 🐨 use that function in place of the divs below with:
-    // 💰 {message({children: 'Hello World'})} {message({children: 'Goodbye World'})}
+    /*
     const element = (
+      const message = children => <div className="message">{children}</div>
       <div className="container">
-        <div className="message">Hello World</div>
-        <div className="message">Goodbye World</div>
+        {message('Hello World')}
+        {message('Goodbye World')}
       </div>
     )
+    */
 
-    // 💯 This is only the first step to making actual React components. The rest is in the extra credit!
+    // 💯
+    // const Message = ({children, ...props}) =>
+    //   React.createElement('div', {className: 'message', ...props}, children)
+
+    // const element = (
+    //   <div className="container">
+    //     <Message>Hello World</Message>
+    //     <Message>Goodbye World</Message>
+    //   </div>
+    // )
+
+    // const Message = ({children, ...props}) => (
+    //   <div className="message" {...props}>
+    //     {children}
+    //   </div>
+    // )
+    // // a callback não funciona sem a assinatura unária
+    // const helloElement = React.createElement(Message, {children: 'Hello World'})
+    // const element = (
+    //   <div className="container">
+    //     {helloElement /*isso é um componente React*/}
+    //     {
+    //       Message({
+    //         children: 'Goodbye World',
+    //       }) /*isso não é um componente react */
+    //     }
+    //     {React.createElement(Message, {children: 'I am a React Component'})}
+    //     <Message>Me too!</Message>
+    //   </div>
+    // )
+
+    // 💯 3)
+    /*
+    For this extra credit, add propTypes support to your updated component (remember to update it to have the subject and greeting).
+    */
+
+    /*
+    PropTypes só roda em development
+    Antes, isso vinha embutido no React. Atualmente é um pacote separado:
+    https://www.npmjs.com/package/prop-types
+
+    */
+    const PropTypes = {
+      string: (props, propName, componentName) => {
+        if (typeof props[propName] !== 'string')
+          return new Error(`${propName} should be a string!`)
+      },
+    }
+
+    const Message = ({subject, greeting}) => {
+      return (
+        <div className="message">
+          {greeting}, {subject}
+        </div>
+      )
+    }
+    Message.propTypes = {
+      // react usa esse método como uma callback.
+      subject: PropTypes.string,
+    }
+
+    const element = (
+      <React.Fragment>
+        <Message subject="Léo" greeting="Oi" />
+        <Message subject="Léo" greeting="Tchau" />
+      </React.Fragment>
+    )
+
     ReactDOM.render(element, document.getElementById('root'))
   </script>
 </body>
