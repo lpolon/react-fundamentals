@@ -26,10 +26,11 @@ import '../box-styles.css'
 //   </div>
 // )
 
-function Box({className, style, size, ...rest}) {
+function Box({className = '', style = {}, size, ...rest}) {
+  const boxSize = size ? `box--${size}` : ''
   return (
     <div
-      className={`box box--${size} ${className}`}
+      className={`box ${boxSize} ${className}`}
       style={{...style, fontStyle: 'italic'}}
       {...rest}
     />
