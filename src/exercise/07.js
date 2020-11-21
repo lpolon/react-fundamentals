@@ -36,8 +36,17 @@ function App() {
       </button>
       <ul style={{listStyle: 'none', paddingLeft: 0}}>
         {items.map(item => (
-          // 🐨 add a key prop to the <li> below. Set it to item.id
-          <li>
+          /*
+            Sem a key, não remove o label e o input certos
+
+            using the array index as a key is no different from React’s default behavior, so it’s unlikely to fix issues if you’re having them. Best to use a unique ID.
+
+            É só um jeito de silenciar o problema. Isso será um problema sempre que o que está listado é um elemento mantendo estado (no react ou no browser, como um elemento de input).
+
+            (extra)
+            Sem a key, é vários tipos de estado que o React não consegue atualizar corretamente! Inclusive focus.
+           */
+          <li key={item.id}>
             <button onClick={() => removeItem(item)}>remove</button>{' '}
             <label htmlFor={`${item.value}-input`}>{item.value}</label>{' '}
             <input id={`${item.value}-input`} defaultValue={item.value} />
