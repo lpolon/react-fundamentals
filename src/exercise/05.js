@@ -1,4 +1,7 @@
-import React from 'react'
+// Styling
+// http://localhost:3000/isolated/exercise/05.js
+
+import * as React from 'react'
 import '../box-styles.css'
 
 // const smallBox = (

@@ -256,6 +256,106 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "decisa",
+      "name": "Art Telesh",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/35339760?v=4",
+      "profile": "https://github.com/decisa",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "merodiro",
+      "name": "Amr A.Mohammed",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/17033502?v=4",
+      "profile": "https://github.com/merodiro",
+      "contributions": [
+        "ideas"
+      ]
+    },
+    {
+      "login": "DRS90",
+      "name": "Douglas",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/22821570?v=4",
+      "profile": "https://github.com/DRS90",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "allstargaurav",
+      "name": "Gaurav",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/24932097?v=4",
+      "profile": "https://github.com/allstargaurav",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "LauraOneasca",
+      "name": "LauraOneasca",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/31212753?v=4",
+      "profile": "https://github.com/LauraOneasca",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "MichaelDeBoey",
+      "name": "Michaël De Boey",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6643991?v=4",
+      "profile": "https://michaeldeboey.be",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Xiphe",
+      "name": "Hannes Diercks",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/911218?v=4",
+      "profile": "http://xiphe.net",
+      "contributions": [
+        "test"
+      ]
+    },
+    {
+      "login": "denno020",
+      "name": "Luke",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2059313?v=4",
+      "profile": "https://github.com/denno020",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "tonidezman",
+      "name": "Toni Dezman",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11177270?v=4",
+      "profile": "https://tonidezman.github.io/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bobbywarner",
+      "name": "Bobby Warner",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/554961?v=4",
+      "profile": "http://bobbywarner.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "PunkSage",
+      "name": "Konrad Szałwiński",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1321225?v=4",
+      "profile": "https://github.com/PunkSage",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true
